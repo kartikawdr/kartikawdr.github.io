@@ -11,6 +11,9 @@
     <!-- Bootsrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -48,7 +51,7 @@
     <section class="jumbotron text-center">
       <img src="img/profil.jpeg" alt="Kartika Wulandari" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-5">Kartika Wulandari</h1>
-      <p class="lead">Student</p>
+      <p class="lead">Student | Multimedia Major</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -61,17 +64,17 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-down">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="2000">
             <p>Hello, my name is Kartika Wulandari from Tangerang, Indonesia. I'm a student in Mutiara Bangsa 1 School. This is my first website and i learned it from WPU Unpas on Youtube.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">
             <p>For you guys have see my portfolio.This is just practice. You can send messages on below for advice. Thank You XOXO <i class="bi bi-heart-fill text-danger"></i></p>
           </div>
         </div>
@@ -88,34 +91,34 @@
 
     <!-- Projects -->
     <section id="projects">
-      <div class="container">
+      <div class="container" data-aos="fade-down">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>My Projects</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="200">
             <div class="card">
               <img src="projects/COVER CD.jpg" class="card-img-top" alt="Cover CD" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Ini adalah cover produk UKK saat kelas 11 .</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="300">
             <div class="card">
               <img src="projects/LABEL CD.jpg" class="card-img-top" alt="Label cd" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Ini adalah cover produk TO UKK saat kelas 12.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="400">
             <div class="card">
-              <img src="projects/TKP.jpg" class="card-img-top" alt="TKP" />
+              <img src="projects/COVER CD(KARTIKA WULANDARI_XII MM 2).jpg" class="card-img-top" alt="TKP" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Ini adalah cover produk UKK kelas 12.</p>
               </div>
             </div>
           </div>
@@ -175,6 +178,18 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+      gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0, ease: "back" });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0 });
+      gsap.from(".display-5", { duration: 1, x: -50, opacity: 0, ease: "bounce", delay: 0.5 });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwEQcFq_zjpOimZgy1dtb5I0g7Mr0lU4sVkD72rJkXKU3DaSlGQCYNMUVtT_JewLWDt/exec";
